@@ -1,4 +1,4 @@
-{% set version = '0.1.1' %}
+{% set version = "0.1.2" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,11 +10,11 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/survivalAnalysis_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/survivalAnalysis/survivalAnalysis_{{ version }}.tar.gz
-  sha256: 8eef188ea449a1a12a1d3bf63b3ad0bdbef0f6b4eb9c627ccc599ac1a67e9078
+  sha256: 2870baea3c45f8fea251258d1e308bfc74e03990c38f2545a484621056e6fe9e
 
 build:
-  merge_build_host: True  # [win]
-  number: 1
+  merge_build_host: true  # [win]
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
@@ -66,14 +66,11 @@ test:
 about:
   home: https://CRAN.R-project.org/package=survivalAnalysis
   license: GPL-3
-  summary: A high-level interface to perform survival analysis,  including Kaplan-Meier analysis
-    and log-rank tests and Cox regression. Aims at providing a clear and elegant syntax,
-    support for use in a pipeline, structured output and plotting. Builds upon the 'survminer'
-    package for Kaplan-Meier plots and provides a customizable implementation for forest
-    plots. Kaplan & Meier (1958) <doi:10.1080/01621459.1958.10501452> Cox (1972) <JSTOR:2985181>
-    Peto & Peto (1972) <doi:10.2307/2344317>.
+  summary: A high-level interface to perform survival analysis,  including Kaplan-Meier analysis and log-rank tests and Cox regression. Aims at providing a clear
+    and elegant syntax, support for use in a pipeline, structured output and plotting. Builds upon the 'survminer' package for Kaplan-Meier plots and provides a customizable
+    implementation for forest plots. Kaplan & Meier (1958) <doi:10.1080/01621459.1958.10501452> Cox (1972) <JSTOR:2985181> Peto & Peto (1972) <doi:10.2307/2344317>.
   license_family: GPL3
-  license_file: '{{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3'
+  license_file: {{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3
 
 extra:
   recipe-maintainers:
