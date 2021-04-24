@@ -5,11 +5,9 @@ Home: https://CRAN.R-project.org/package=survivalAnalysis
 
 Package license: GPL-3
 
-Feedstock license: BSD 3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-survivalanalysis-feedstock/blob/master/LICENSE.txt)
 
 Summary: A high-level interface to perform survival analysis,  including Kaplan-Meier analysis and log-rank tests and Cox regression. Aims at providing a clear and elegant syntax, support for use in a pipeline, structured output and plotting. Builds upon the 'survminer' package for Kaplan-Meier plots and provides a customizable implementation for forest plots. Kaplan & Meier (1958) <doi:10.1080/01621459.1958.10501452> Cox (1972) <JSTOR:2985181> Peto & Peto (1972) <doi:10.2307/2344317>.
-
-
 
 Current build status
 ====================
@@ -38,6 +36,7 @@ Installing `r-survivalanalysis` from the `conda-forge` channel can be achieved b
 
 ```
 conda config --add channels conda-forge
+conda config --set channel_priority strict
 ```
 
 Once the `conda-forge` channel has been enabled, `r-survivalanalysis` can be installed with:
@@ -108,9 +107,9 @@ build distinct package versions.
 
 In order to produce a uniquely identifiable distribution:
  * If the version of a package **is not** being increased, please add or increase
-   the [``build/number``](https://conda.io/docs/user-guide/tasks/build-packages/define-metadata.html#build-number-and-string).
+   the [``build/number``](https://docs.conda.io/projects/conda-build/en/latest/resources/define-metadata.html#build-number-and-string).
  * If the version of a package **is** being increased, please remember to return
-   the [``build/number``](https://conda.io/docs/user-guide/tasks/build-packages/define-metadata.html#build-number-and-string)
+   the [``build/number``](https://docs.conda.io/projects/conda-build/en/latest/resources/define-metadata.html#build-number-and-string)
    back to 0.
 
 Feedstock Maintainers
