@@ -1,4 +1,4 @@
-{% set version = "0.2.0" %}
+{% set version = "0.3.0" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,7 +10,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/survivalAnalysis_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/survivalAnalysis/survivalAnalysis_{{ version }}.tar.gz
-  sha256: cad35d1b5a52438aaa4bfa86772b6d6f5401cc7e138802244267303eb1eca7eb
+  sha256: eef98a2d2517c3367b89f6054ef1ba19302f5bbf819dbc17fb243d282b8c8c68
 
 build:
   merge_build_host: true  # [win]
