@@ -1,11 +1,11 @@
-About r-survivalanalysis
-========================
+About r-survivalanalysis-feedstock
+==================================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-survivalanalysis-feedstock/blob/main/LICENSE.txt)
 
 Home: https://CRAN.R-project.org/package=survivalAnalysis
 
 Package license: GPL-3
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-survivalanalysis-feedstock/blob/main/LICENSE.txt)
 
 Summary: A high-level interface to perform survival analysis,  including Kaplan-Meier analysis and log-rank tests and Cox regression. Aims at providing a clear and elegant syntax, support for use in a pipeline, structured output and plotting. Builds upon the 'survminer' package for Kaplan-Meier plots and provides a customizable implementation for forest plots. Kaplan & Meier (1958) <doi:10.1080/01621459.1958.10501452> Cox (1972) <JSTOR:2985181> Peto & Peto (1972) <doi:10.2307/2344317>.
 
